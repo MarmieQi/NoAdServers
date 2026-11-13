@@ -1,0 +1,9 @@
+{
+  "name": "${modName}",
+  "entry": "${modFile}",
+  "version": "${modVersion}",
+  "type": "native",
+  "platform": "${modPlatform}",
+  "description": "去除官方精选服务器",
+  "author": "Cat66"
+}

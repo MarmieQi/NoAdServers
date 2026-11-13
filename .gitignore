@@ -1,0 +1,24 @@
+# XMake caches and generated output
+.xmake/
+build/
+bin/
+
+# Frontend dependencies and generated bundle
+frontend/node_modules/
+frontend/dist/
+
+# IDE and compiler artifacts
+.vs/
+.vscode/
+.idea/
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.dll
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
