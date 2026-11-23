@@ -1,23 +1,20 @@
 format = 4
 id = "github.com/MarmieQi/NoAdServers"
-version = "26.60.0"
+version = "26.60.2"
 
 [info]
 name = "NoAdServers"
 description = "去除官方精选服务器 / Remove official featured servers"
 tags = ["utility"]
 
-[[variants."client"]]
+[[variants.""]]
 side = "client"
 platform = "win-x64"
 
-[variants."client".deps]
-"github.com/LiteLDev/LeviLamina" = "26.60.*"
+[variants."".deps]
+"github.com/LiteLDev/LeviLamina" = ">26.60.6 <26.61.0"
 
-[[variants."client".assets]]
+[[variants."".assets]]
 type = "zip"
-urls = ["https://github.com/MarmieQi/NoAdServers/releases/download/v{{version}}/NoAdServers-client-windows-x64.zip"]
-
-[[variants."client".assets.place]]
-src = "NoAdServers/"
-dest = "mods/NoAdServers/"
+urls = ["https://{{id}}/releases/download/v{{version}}/NoAdServers-client-windows-x64.zip"]
+place = [{ src = "NoAdServers/", dest = "mods/NoAdServers/" }]
